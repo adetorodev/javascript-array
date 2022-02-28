@@ -30,3 +30,15 @@ let languages = ['C', 'C++', 'Java', 'JavaScript'];
 languages.splice(1, 1, 'Python');
 console.log(languages); 
 // ["C", "Python", "Java", "JavaScript"]
+
+
+
+/* *************************************
+        ARRAY Concat
+*************************************** */
+
+// The method arr.concat creates a new array that includes values from other arrays and additional items.
+
+// The syntax is:
+
+// arr.concat(arg1, arg2...)
