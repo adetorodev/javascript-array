@@ -33,7 +33,13 @@
 // let arr = ["I", "study", "JavaScript", "right", "now"]; 
 // remove 3 first elements and replace them with another
 // remove "I", "study" and "JavaScript"
-arr.splice(0, 3, "Let's", "dance"); 
-console.log(arr); // ["Let's", "dance", "right", "now"]
+// arr.splice(0, 3, "Let's", "dance"); 
+// console.log(arr); // ["Let's", "dance", "right", "now"]
 
 // Here we can see that splice returns the array of removed elements:
+let arr = ["I", "study", "JavaScript", "right", "now"];
+
+// remove 2 first elements
+let removed = arr.splice(0, 2);
+
+console.log( removed ); // "I", "study" <-- array of removed elements
