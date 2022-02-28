@@ -11,10 +11,14 @@
 // arr.lastIndexOf(item, from) – same, but looks for from right to left.
 // arr.includes(item, from) – looks for item starting from index from, returns true if found.
 
-let arr = [1, 0, false];
+// let arr = [1, 0, false];
 
-console.log( arr.indexOf(0) ); // 1
-console.log( arr.indexOf(false) ); // 2
-console.log( arr.indexOf(null) ); // -1
+// console.log( arr.indexOf(0) ); // 1
+// console.log( arr.indexOf(false) ); // 2
+// console.log( arr.indexOf(null) ); // -1
 
-console.log( arr.includes(1) ); // true
+// console.log( arr.includes(1) ); // true
+
+const arr = [NaN];
+console.log( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
+console.log( arr.includes(NaN) );// true (correct)
