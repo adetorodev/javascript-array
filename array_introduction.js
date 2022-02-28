@@ -18,3 +18,14 @@ console.log(numbers[4]);
 
 // Let us check for the number of items in the array
 console.log(numbers.length);
+
+// Let creat an array of strings
+let names = ["John", "Jane", "Mary", "Mark", "Bob"];
+console.log(names);
+
+// We can get the first item in the array by using the index 0
+console.log(names[0]);
+// We can get the last item in the array by using the index 4
+console.log(names[4]);
+
+// 
