@@ -37,9 +37,21 @@
 // console.log(arr); // ["Let's", "dance", "right", "now"]
 
 // Here we can see that splice returns the array of removed elements:
-let arr = ["I", "study", "JavaScript", "right", "now"];
+// let arr = ["I", "study", "JavaScript", "right", "now"];
 
 // remove 2 first elements
-let removed = arr.splice(0, 2);
+// let removed = arr.splice(0, 2);
 
-console.log( removed ); // "I", "study" <-- array of removed elements
+// console.log( removed ); // "I", "study" <-- array of removed elements
+
+// The splice method is also able to insert the elements without any removals. For that we need to set 
+// deleteCount to 0:
+
+let arr = ["I", "study", "JavaScript"];
+
+// from index 2
+// delete 0, shift "JavaScript" forward and add the new elements
+// then insert "complex" and "language"
+arr.splice(2, 0, "complex", "language");
+
+console.log( arr ); // "I", "study", "complex", "language", "JavaScript"
