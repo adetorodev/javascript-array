@@ -18,3 +18,14 @@ In the for-loop we create variable i, and i is less than colors.length and incre
 // }
 
 colors.forEach(color => console.log(color))
+
+
+// Unassigned values 
+
+let array = ['first', 'second', , 'fourth']
+
+array.forEach(function(element) {
+    console.log(element)
+  })
+
+  //  Unassigned values are not iterated in a forEach loop.
