@@ -55,5 +55,7 @@
 
 // the method reorders the content of arr
 // arr.sort();
-
+// The items are sorted as strings by default.
 // console.log( arr );  // 1, 15, 2
+
+// To use our own sorting order, we need to supply a function as the argument of arr.sort().
