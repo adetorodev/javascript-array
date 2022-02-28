@@ -52,3 +52,14 @@ console.log(books.length)
 The length property is special. It always returns the index of the last element plus one. (In the example above, 'Arrays in JavaScript' is indexed at 20, so books.length returns 20 + 1)
 JavaScript Array indexes are 0-based: they start at 0, not 1. This means that the length property will be one more than the highest index stored in the array.
 */
+
+// We can also assign length
+
+let favoriteFood = ["Rice", "Cheese", "Pie"]
+console.log(favoriteFood.length)
+favoriteFood.length = 2
+console.log(favoriteFood) // Pie has been remove
+console.log(favoriteFood.length) // Length is now 2
+
+/* When we are using this method of hardcoding the length of the array, we should be mindful
+that the last array will be remove  */
