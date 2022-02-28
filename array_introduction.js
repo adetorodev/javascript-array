@@ -15,3 +15,6 @@ console.log(numbers[0]);
 console.log(numbers[9]);
 // We can get the middle item in the array by using the index 4
 console.log(numbers[4]);
+
+// Let us check for the number of items in the array
+console.log(numbers.length);
