@@ -36,16 +36,24 @@
 
 // console.log(userFullnames);
 
-let arr = [2, 3, 5, 7]
+// let arr = [2, 3, 5, 7]
 
 // arr.map(function (element, index, array) {
 //     console.log(this) // 80
 // }, 80);
 
-arr.map(function (element, index, array) {
-    console.log(element);
-    console.log(index);
-    console.log(array);
-    return element;
-}, 80);
+// arr.map(function (element, index, array) {
+//     console.log(element);
+//     console.log(index);
+//     console.log(array);
+//     return element;
+// }, 80);
 
+// sort(fn)
+// The call to arr.sort() sorts the array in place, changing its element order.
+// let arr = [ 1, 2, 15 ];
+
+// the method reorders the content of arr
+// arr.sort();
+
+// console.log( arr );  // 1, 15, 2
