@@ -47,11 +47,21 @@
 // The splice method is also able to insert the elements without any removals. For that we need to set 
 // deleteCount to 0:
 
-let arr = ["I", "study", "JavaScript"];
+// let arr = ["I", "study", "JavaScript"];
 
 // from index 2
 // delete 0, shift "JavaScript" forward and add the new elements
 // then insert "complex" and "language"
-arr.splice(2, 0, "complex", "language");
+// arr.splice(2, 0, "complex", "language");
 
-console.log( arr ); // "I", "study", "complex", "language", "JavaScript"
+// console.log( arr ); // "I", "study", "complex", "language", "JavaScript"
+
+// negative allowed
+
+let arr = [1, 2, 5];
+
+// from index -1 (one step from the end)
+// delete 0 elements,
+// then insert 3 and 4
+arr.splice(-1, 0, 3, 4);
+console.log( arr ); // 1,2,3,4,5
