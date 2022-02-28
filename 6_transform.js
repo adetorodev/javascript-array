@@ -15,3 +15,11 @@
 //   // returns the new value instead of item
 // });
 
+// let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+
+// console.log(lengths)
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let modifiArr = arr.map(item => item * 2);
+// console.log(modifiArr)
