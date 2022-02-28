@@ -23,3 +23,15 @@
 
 // let modifiArr = arr.map(item => item * 2);
 // console.log(modifiArr)
+
+// let users = [
+//     { firstName: "Susan", lastName: "Steward" },
+//     { firstName: "Daniel", lastName: "Longbottom" },
+//     { firstName: "Jacob", lastName: "Black" }
+// ];
+
+// let userFullnames = users.map(function (item) {
+//     return `${item.firstName} ${item.lastName}`;
+// })
+
+// console.log(userFullnames);
