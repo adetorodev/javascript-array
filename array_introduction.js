@@ -28,4 +28,16 @@ console.log(names[0]);
 // We can get the last item in the array by using the index 4
 console.log(names[4]);
 
-// 
+let arr1 = [10]       // Creates an array with only one element:
+                     // the number 10.
+
+let arr2 = Array(12)  // Creates an array with no elements
+                     // and arr.length set to 12. This is equivalent to:
+let arr = []
+arr.length = 11
+
+arr[0] = 'Casey Jones' // Add the first element to the array
+arr[1] = 'Phil Lesh'   // Add another element to the array
+arr[2] = 'August West'
+
+console.log(arr)
