@@ -19,6 +19,21 @@
 
 // console.log( arr.includes(1) ); // true
 
-const arr = [NaN];
-console.log( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
-console.log( arr.includes(NaN) );// true (correct)
+// const arr = [NaN];
+// console.log( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
+// console.log( arr.includes(NaN) );// true (correct)
+
+// Imagine we have an array of objects. How do we find an object with the specific condition?
+
+// Here the arr.find(fn) method comes in handy.
+
+// let result = arr.find(function(item, index, array) {
+//         if true is returned, item is returned and iteration is stopped
+//         for falsy scenario returns undefined
+//       });
+
+// The function is called for elements of the array, one after another:
+
+// item is the element.
+// index is its index.
+// array is the array itself.
