@@ -17,10 +17,16 @@
 
 // console.log( arr.slice(-2) ); // s,t (copy from -2 till the end)
 
-let months = ["January", "February", "Monday", "Tuesday"];
-let days = months.splice(2, 2, "March", "April");
+// let months = ["January", "February", "Monday", "Tuesday"];
+// let days = months.splice(2, 2, "March", "April");
 
-console.log(days); // ["Monday", "Tuesday"]
-console.log(months); // ["January", "February", "March", "April"]
+// console.log(days); // ["Monday", "Tuesday"]
+// console.log(months); // ["January", "February", "March", "April"]
 
 // Remove the array from monts and replace it with "March", "April"
+
+// Delete 
+let languages = ['C', 'C++', 'Java', 'JavaScript'];
+languages.splice(1, 1, 'Python');
+console.log(languages); 
+// ["C", "Python", "Java", "JavaScript"]
