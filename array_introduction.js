@@ -29,10 +29,10 @@ console.log(names[0]);
 console.log(names[4]);
 
 let arr1 = [10]       // Creates an array with only one element:
-                     // the number 10.
+// the number 10.
 
 let arr2 = Array(12)  // Creates an array with no elements
-                     // and arr.length set to 12. This is equivalent to:
+// and arr.length set to 12. This is equivalent to:
 let arr = []
 arr.length = 11
 
@@ -41,3 +41,14 @@ arr[1] = 'Phil Lesh'   // Add another element to the array
 arr[2] = 'August West'
 
 console.log(arr)
+
+// Let chack this magic here
+
+let books = []
+books[20] = "Arrays in JavaScript"
+// Let us check for the length of the array
+console.log(books.length)
+/* 
+The length property is special. It always returns the index of the last element plus one. (In the example above, 'Arrays in JavaScript' is indexed at 20, so books.length returns 20 + 1)
+JavaScript Array indexes are 0-based: they start at 0, not 1. This means that the length property will be one more than the highest index stored in the array.
+*/
