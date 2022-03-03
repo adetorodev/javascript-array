@@ -60,14 +60,31 @@
 
 // To use our own sorting order, we need to supply a function as the argument of arr.sort().
 
-function compareNumeric(a, b) {
-    if (a > b) return 1;
-    if (a == b) return 0;
-    if (a < b) return -1;
-}
+// function compareNumeric(a, b) {
+//     if (a > b) return 1;
+//     if (a == b) return 0;
+//     if (a < b) return -1;
+// }
 
-let arr = [1, 2, 15];
+// let arr = [1, 2, 15];
 
-arr.sort(compareNumeric);
+// arr.sort(compareNumeric);
 
-console.log(arr);  // 1, 2, 15
+// console.log(arr);  // 1, 2, 15
+
+/*
+Let’s step aside and think what’s happening. The arr can be array of anything, right? It may contain numbers or strings or objects or whatever. We have a set of some items. To sort it, we need an ordering function that knows how to compare its elements. The default is a string order.
+
+The arr.sort(fn) method implements a generic sorting algorithm. We don’t need to care how it internally works (an optimized quicksort or Timsort most of the time). It will walk the array, compare its elements using the provided function and reorder them, all we need is to provide the fn which does the comparison.
+*/
+
+[1, -2, 15, 2, 0, 8].sort(function(a, b) {
+    console.log( a + " <> " + b );
+    return a - b;
+  });
+
+  let countries = ['Österreich', 'Andorra', 'Vietnam'];
+
+console.log( countries.sort( (a, b) => a > b ? 1 : -1) ); // Andorra, Vietnam, Österreich (wrong)
+
+console.log( countries.sort( (a, b) => a.localeCompare(b) ) ); // Andorra,Österreich,Vietnam (correct!)
